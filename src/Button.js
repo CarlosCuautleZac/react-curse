@@ -1,5 +1,6 @@
-export function Button(){
+export function Button({text}){
+    console.log(text)
     return <button>
-        Mi Boton
+        {text}
     </button>
 }

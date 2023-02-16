@@ -13,6 +13,6 @@ function Greeting(){
 
 
 root.render(<>
-<Button></Button>
-
+<Button text="lo que quieras"></Button>
+<Button text={3000}></Button>
 </>)
