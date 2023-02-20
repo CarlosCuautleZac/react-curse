@@ -1,18 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Button} from './Button'
+import {Greeting} from './Greeting'
+import {TaskCard} from './Task'
+import {Saludar} from './Saludar'
+import {Posts} from './Post'
 
-
+//eventos
+// const handleChanged= (e)=>{
+//     console.log(e.target.value+"...")
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-function Greeting(){
-    const name = false
-     return <h1>{name?'Estoy casado':'No estoy casado'}</h1>
-};
-
-
 root.render(<>
-<Button text="lo que quieras"></Button>
-<Button text={3000}></Button>
+{/* <TaskCard ready={true}></TaskCard>
+<Saludar></Saludar>
+<Button text="Saludar"></Button>
+<form onSubmit={(e)=>{
+    e.preventDefault()
+    alert("Se ha enviado el elemento")
+}}>
+    <h1>Registro de usuario</h1>
+    <button>Send</button>
+</form> */}
+
+<Posts></Posts>
+
+
 </>)
